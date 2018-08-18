@@ -849,4 +849,7 @@
 
     <!-- Davinci doesn't have multicolor led-->
     <bool name="config_multiColorBatteryLed">false</bool>
+
+    <!-- Whether the device supports Smart Pixels -->
+    <bool name="config_enableSmartPixels">true</bool>
 </resources>
