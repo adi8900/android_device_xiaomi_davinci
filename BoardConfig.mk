@@ -34,6 +34,9 @@ TARGET_TAP_TO_WAKE_EVENT_NODE := "/dev/input/event2"
 # Sepolicy
 BOARD_SEPOLICY_DIRS += $(DEVICE_PATH)/sepolicy/vendor
 
+# Telephony
+TARGET_USES_ALTERNATIVE_MANUAL_NETWORK_SELECT := true
+
 # Vendor init
 TARGET_INIT_VENDOR_LIB := libinit_davinci
 TARGET_RECOVERY_DEVICE_MODULES := libinit_davinci
