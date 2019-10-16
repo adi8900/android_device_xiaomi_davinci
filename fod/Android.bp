@@ -16,9 +16,12 @@
 cc_binary {
     relative_install_path: "hw",
     defaults: ["hidl_defaults"],
-    name: "lineage.biometrics.fingerprint.inscreen@1.0-service.davinci",
-    init_rc: ["lineage.biometrics.fingerprint.inscreen@1.0-service.davinci.rc"],
-    srcs: ["service.cpp", "FingerprintInscreen.cpp"],
+    name: "vendor.lineage.biometrics.fingerprint.inscreen@1.0-service.xiaomi_davinci",
+    init_rc: ["vendor.lineage.biometrics.fingerprint.inscreen@1.0-service.xiaomi_davinci.rc"],
+    srcs: [
+	"service.cpp",
+        "FingerprintInscreen.cpp",
+    ],
     shared_libs: [
         "libbase",
         "libhardware",
