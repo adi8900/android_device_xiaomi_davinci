@@ -44,12 +44,10 @@ TARGET_KERNEL_ARCH := arm64
 TARGET_KERNEL_CLANG_COMPILE := true
 TARGET_KERNEL_CLANG_VERSION := 9.0.5
 TARGET_KERNEL_CONFIG := davinci_defconfig
-ifeq ($(TARGET_PREBUILT_KERNEL),)
-  TARGET_KERNEL_CROSS_COMPILE_PREFIX := aarch64-linux-android-
-  TARGET_KERNEL_SOURCE := kernel/xiaomi/sm6150
-endif
-
 NEED_KERNEL_MODULE_SYSTEM := true
+TARGET_KERNEL_CROSS_COMPILE_PREFIX := aarch64-linux-android-
+TARGET_KERNEL_SOURCE := kernel/xiaomi/davinci
+
 
 
 # Platform
