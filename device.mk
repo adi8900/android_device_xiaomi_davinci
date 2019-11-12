@@ -24,6 +24,15 @@ DEVICE_PACKAGE_OVERLAYS += \
 # Properties
 -include $(LOCAL_PATH)/system_prop.mk
 
+# telephony
+PRODUCT_PACKAGES += \
+    qti-telephony-common
+
+# Camera Motor
+PRODUCT_PACKAGES += \
+    libgui_vendor \
+    vendor.lineage.camera.motor@1.0-service.xiaomi_davinci
+
 # Device uses high-density artwork where available
 PRODUCT_AAPT_CONFIG := normal
 PRODUCT_AAPT_PREF_CONFIG := xxhdpi
