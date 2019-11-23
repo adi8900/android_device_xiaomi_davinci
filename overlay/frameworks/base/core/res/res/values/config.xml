@@ -846,4 +846,7 @@
 
     <!-- Whether to show a custom view for FOD -->
     <bool name="config_needCustomFODView">true</bool>
+
+    <!-- Davinci doesn't have multicolor led-->
+    <bool name="config_multiColorBatteryLed">false</bool>
 </resources>
